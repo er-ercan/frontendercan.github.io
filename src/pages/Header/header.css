@@ -1,0 +1,28 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #05a750;
+  padding: 0 100px;
+  background-color: #171321;
+}
+
+.main-nav {
+  display: flex;
+  gap: 5rem;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "PTSerifCap";
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "AlegreyaExtraBold, serif";
+  cursor: pointer;
+}

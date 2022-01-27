@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "AlegreyaBlack";
+  src: local("AlegreyaBlack"),
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Black.ttf) format("tff");
+}
+
+@font-face {
+  font-family: "AlegreyaBlack-Bold";
+  src: local("AlegreyaBlack-Bold"),
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Bold.ttf) format("tff");
+}
+
+@font-face {
+  font-family: "AlegreyaExtraBold";
+  src: local("AlegreyaExtraBold"),
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-ExtraBold.ttf) format("tff");
+}
+
+@font-face {
+  font-family: "PTSerifCap";
+  src: local("PTSerifCap"),
+    url(./assets/fonts/PT_Serif_Caption/PTSerifCaption-Regular.ttf)
+      format("tff");
+}
+
+@font-face {
+  font-family: "Alegreya-Medium";
+  src: local("Alegreya-Medium"),
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Medium.ttf) format("tff");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

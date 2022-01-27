@@ -1,0 +1,17 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  background-color: #171321;
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
+
+.section-profile {
+  display: flex;
+  width: 100%;
+}
