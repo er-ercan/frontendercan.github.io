@@ -4,7 +4,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const variants = {
   open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-200%" },
+  closed: { opacity: 0, x: "-200%", visibility: "hidden" },
 };
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
   );
 
   const menuHandler = (x) => {
-    if (x?.current < -1) {
+    if (x?.current < -10) {
       setIsOpen(false);
     } else if (x?.current > 10) {
       setIsOpen(true);
@@ -35,7 +35,7 @@ const Header = () => {
             style={{ x }}
             onDrag={() => menuHandler(x)}
           >
-            <h1 className="header-title"> Ercan Er </h1>
+            <div className="header-title">Ercan Er </div>
           </motion.div>
 
           <motion.nav animate={isOpen ? "open" : "closed"} variants={variants}>

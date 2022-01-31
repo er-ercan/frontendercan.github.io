@@ -1,32 +1,39 @@
 @font-face {
   font-family: "AlegreyaBlack";
   src: local("AlegreyaBlack"),
-    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Black.ttf) format("tff");
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Black.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "AlegreyaBlack-Bold";
   src: local("AlegreyaBlack-Bold"),
-    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Bold.ttf) format("tff");
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "AlegreyaExtraBold";
   src: local("AlegreyaExtraBold"),
-    url(./assets/fonts/Alegreya_SC/AlegreyaSC-ExtraBold.ttf) format("tff");
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "PTSerifCap";
   src: local("PTSerifCap"),
     url(./assets/fonts/PT_Serif_Caption/PTSerifCaption-Regular.ttf)
-      format("tff");
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Mochiy-bold";
+  src: local("Mochiy-bold"),
+    url(./assets/fonts/Mochiy_Pop_P_One/MochiyPopPOne-Regular.ttf)
+      format("truetype");
 }
 
 @font-face {
   font-family: "Alegreya-Medium";
   src: local("Alegreya-Medium"),
-    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Medium.ttf) format("tff");
+    url(./assets/fonts/Alegreya_SC/AlegreyaSC-Medium.ttf) format("truetype");
 }
 
 body {

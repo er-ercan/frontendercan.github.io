@@ -1,0 +1,96 @@
+.section-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 450px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.defination-person {
+  font-family: "Mochiy-bold";
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+.slider-button {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.radio-container {
+  cursor: pointer;
+  height: calc((300px - 10rem) / 6 + 1rem);
+  margin: 0;
+  position: relative;
+}
+
+.bio-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.slider-button-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+}
+
+.slider-label {
+  font-size: 0.625rem;
+}
+
+.slider-label::before {
+  border: 1px solid pink;
+  z-index: 10;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  padding-bottom: calc(0.75rem - 1px);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.75rem;
+}
+
+.slider-label::after {
+  background: pink;
+  opacity: 0;
+  transition: 200ms opacity linear;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0;
+  left: 50%;
+  padding-bottom: calc(0.75rem - 1px);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.75rem;
+}
+
+:checked + .slider-label::after {
+  opacity: 1;
+}
+
+.bioMessages {
+  font-family: "Mochiy-bold";
+  font-size: 1.5rem;
+  color: #ffffff;
+  width: calc(100% - 300px);
+  height: 200px;
+  padding: 0 20px;
+}
