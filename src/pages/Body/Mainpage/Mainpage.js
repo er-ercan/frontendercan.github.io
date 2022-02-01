@@ -31,9 +31,8 @@ const bioMessages = {
         damping: 20,
       }}
     >
-      "I'm a full-stack developer, I love to create web applications and mobile
-      applications. I'm a self-taught developer and I'm always looking for new
-      challenges.",
+      I'm a front-end developer. I was born in Samsun, Turkey. I'm 32 years old.
+      I working 8 years in web and Mobile development.
     </motion.div>
   ),
   medium: (
@@ -102,6 +101,7 @@ const Mainpage = () => {
           height: "450px",
           borderRadius: "50%",
           boxShadow: "rgb(9 166 79 / 40%) 0px 0px 13px 5px",
+          marginLeft: "5%",
         }}
         whileTap={{ scale: 0.8, rotate: 1800, borderRadius: "100%" }}
       >
@@ -109,7 +109,9 @@ const Mainpage = () => {
       </motion.div>
       <div className="bio-main-container">
         <h1 className="defination-person">Hello 👋 I'am Ercan Er.</h1>
+        <p style={{ color: "#fff", opacity: "0.5" }}>Adjust bio length:</p>
         <div className="slider-button-list">
+          <p style={{ color: "#fff", opacity: "0.5" }}>shortest</p>
           <div className="radio-container">
             <input
               type="radio"
@@ -180,6 +182,7 @@ const Mainpage = () => {
               <span className="slider-label-text" />
             </label>
           </div>
+          <p style={{ color: "#fff", opacity: "0.5" }}>longest</p>
         </div>
 
         <div className="bioMessages">{bioMessages[slider]}</div>

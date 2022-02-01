@@ -44,7 +44,8 @@
 .slider-button-list {
   display: flex;
   justify-content: space-evenly;
-  width: 250px;
+  width: 450px;
+  align-items: center;
 }
 
 .slider-label {
@@ -90,7 +91,8 @@
   font-family: "Mochiy-bold";
   font-size: 1.5rem;
   color: #ffffff;
-  width: calc(100% - 300px);
+  width: calc(100% - 200px);
   height: 200px;
   padding: 0 20px;
+  text-align: center;
 }
