@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./mainpage.css";
 import profile from "../../../assets/img/profile.png";
 import { motion } from "framer-motion";
+import IconComponent from "../../../components/Icon";
 
 const bioMessages = {
   shortest: (
@@ -108,7 +109,24 @@ const Mainpage = () => {
         <img src={profile} alt="profile" className="profile-img" />
       </motion.div>
       <div className="bio-main-container">
-        <h1 className="defination-person">Hello 👋 I'am Ercan Er.</h1>
+        <h1 className="defination-person">
+          Hello{" "}
+          <motion.div
+            whileHover={{
+              scale: 1,
+              rotate: 30,
+              cursor: "pointer",
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
+          >
+            👋
+          </motion.div>{" "}
+          I'am Ercan Er.
+        </h1>
         <p style={{ color: "#fff", opacity: "0.5" }}>Adjust bio length:</p>
         <div className="slider-button-list">
           <p style={{ color: "#fff", opacity: "0.5" }}>shortest</p>
@@ -184,6 +202,7 @@ const Mainpage = () => {
           </div>
           <p style={{ color: "#fff", opacity: "0.5" }}>longest</p>
         </div>
+        <IconComponent />
 
         <div className="bioMessages">{bioMessages[slider]}</div>
       </div>
