@@ -97,13 +97,7 @@ const Mainpage = () => {
   return (
     <div className="section-profile">
       <motion.div
-        style={{
-          width: "450px",
-          height: "450px",
-          borderRadius: "50%",
-          boxShadow: "rgb(9 166 79 / 40%) 0px 0px 13px 5px",
-          marginLeft: "5%",
-        }}
+        id="profile-image-container"
         whileTap={{ scale: 0.8, rotate: 1800, borderRadius: "100%" }}
       >
         <img src={profile} alt="profile" className="profile-img" />
@@ -202,7 +196,8 @@ const Mainpage = () => {
           </div>
           <p style={{ color: "#fff", opacity: "0.5" }}>longest</p>
         </div>
-        <IconComponent />
+        <IconComponent iconName="github" />
+        <IconComponent iconName="instagram" />
 
         <div className="bioMessages">{bioMessages[slider]}</div>
       </div>

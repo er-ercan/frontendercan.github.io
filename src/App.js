@@ -7,10 +7,9 @@ function App() {
     <div className="App">
       <Header />
       <main className="main-container">
-        <section className="section-profile">
+        <section className="section-profile-container">
           <Mainpage />
         </section>
-        <section>2</section>
       </main>
     </div>
   );
